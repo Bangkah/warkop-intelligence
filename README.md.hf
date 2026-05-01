@@ -1,0 +1,30 @@
+---
+title: Warkop Intelligence Finder
+emoji: 🔍
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 4.26.0
+app_file: app.py
+pinned: false
+---
+
+# Warkop Intelligence Finder - Lhokseumawe Edition
+
+A smart recommendation system to find the best warkops in Lhokseumawe for coding, working, and hanging out.
+
+## Features
+- 🤖 ML-powered recommendations
+- 💻 Best coding spots finder
+- 🎉 Social spots ranking
+- 📍 Location-based search
+- 📊 Statistics & analytics
+
+## Quick Start
+1. Select your preferences (WiFi importance, sockets, vibe, quietness)
+2. Get personalized recommendations
+3. Explore by location or use pre-defined profiles
+
+Powered by Scikit-learn + Gradio. Zero-cost deployment on Hugging Face Spaces.
+
+**"Gas, Bre! Make warkops smarter!" ⚡**
