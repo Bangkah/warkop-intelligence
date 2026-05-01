@@ -25,4 +25,4 @@ wheels/
 *.log
 .env
 .env.local
-warkop-intelligence
+warkop-intelligence/
