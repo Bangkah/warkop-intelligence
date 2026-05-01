@@ -366,9 +366,26 @@ class WarkopRecommender:
 
     @lru_cache(maxsize=128)
     def _compute_query_similarity(self, query: str) -> np.ndarray:
+        """Compute cosine similarity between query and all warkops (cached)."""
+        # Initialize cache if not exists
+        if not hasattr(self, '_query_cache'):
+            self._query_cache = {}
+        
+        # Check cache
+        if query in self._query_cache:
+            return self._query_cache[query]
+        
+        # Compute similarity
         query_vec = self.tfidf.transform([query])
-        return cosine_similarity(query_vec, self.text_matrix).flatten()
-
+        result = cosine_similarity(query_vec, self.text_matrix).flatten()
+        
+        # Limit cache size to prevent memory issues
+        if len(self._query_cache) >= 128:
+            # Remove oldest entry (FIFO)
+            self._query_cache.pop(next(iter(self._query_cache)))
+        
+        self._query_cache[query] = result
+        return result
     # -------------------------------------------------------------------------
     # Statistics
     # -------------------------------------------------------------------------
