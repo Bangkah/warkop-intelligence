@@ -730,8 +730,6 @@ Jika Anda menggunakan project ini dalam riset atau publikasi, mohon mencantumkan
 
 Jika project ini bermanfaat, mohon berikan star di GitHub!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Bangkah/warkop-intelligence&type=Date)](https://star-history.com/Bangkah/warkop-intelligence&Date)
-
 ---
 
 <div align="center">
@@ -741,4 +739,3 @@ Jika project ini bermanfaat, mohon berikan star di GitHub!
 [Back to Top](#warkop-intelligence-finder-wie)
 
 </div>
-```

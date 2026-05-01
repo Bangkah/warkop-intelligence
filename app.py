@@ -325,7 +325,7 @@ CUSTOM_CSS = """
 
 .header-section {
     background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
-    color: white;
+    color: white;   
     padding: 45px 30px;
     border-radius: 16px;
     margin-bottom: 25px;
